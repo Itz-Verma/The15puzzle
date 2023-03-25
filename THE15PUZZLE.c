@@ -3,27 +3,28 @@
 #include <stdlib.h>
 #include <conio.h>
 int key;
-void display(int array[][4]); //this function is used to display the 15 numers with a
+void display (int array[][4]); //this function is used to display the 15 numers with a
 // 0 as 4X4 matrix.
 
-int check(int array[][4]); //this function is used to check whether the updated
+int check (int array[][4]); //this function is used to check whether the updated
 // matrix is arranged in ascending order or not.
-void user_feed(int array[][4]);/* this function is used to generate user filled puzzle
+void user_feed (int array[][4]);/* this function is used to generate user filled puzzle
 */
-void computer_feed(int array[4][4], int a[]);/* this function is used to generate
+void computer_feed (int array[4][4], int a[]);/* this function is used to generate
 computer filled puzzle */
-void moveup(int arr[4][4], int *x, int *y);/* this function is used to swap zero with
+void moveup (int arr[4][4], int *x, int *y);/* this function is used to swap zero with
 a number just above it. */
-void movedown(int arr[4][4], int *x, int *y);/* this function is used to swap zero
+void movedown (int arr[4][4], int *x, int *y);/* this function is used to swap zero
 with a number just below it. */
-void moveleft(int arr[4][4], int *x, int *y);/* this function is used to swap zero with
+void moveleft( int arr[4][4], int *x, int *y);/* this function is used to swap zero with
 a number just to the left of it. */
-void moveright(int arr[4][4], int *x, int *y);/* this function is used to swap zero
+void moveright (int arr[4][4], int *x, int *y);/* this function is used to swap zero
 with a number just to the right of it. */
 void swapvalues(int *a, int *b);/* this function is used to swap value given by
 move functions. */
-void swaprandom(int a[], int i, int j);// THESE TWO FUNCTION ARE USED TO
+void swaprandom (int a[], int i, int j);// THESE TWO FUNCTION ARE USED TO
 void random(int a[], int n); // GENERATED COMPUTER FILLED PUZZLE.
+
 int main()
 {
 printf("\t\tWELCOME TO THE 15PUZZLE GAME\n");
